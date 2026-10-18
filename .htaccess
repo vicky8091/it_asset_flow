@@ -1,0 +1,4 @@
+# Block direct download of data/template files (PHP pages parse server-side; includes emit nothing).
+<FilesMatch "\.(sql|csv|md|log|bat)$">
+  Require all denied
+</FilesMatch>
